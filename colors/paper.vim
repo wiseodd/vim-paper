@@ -55,6 +55,7 @@ command! -nargs=+ Hi call s:Hi(<f-args>)
 let s:colors = {
 \  'background': '#f2eede',
 \  'lbackground': '#f7f3e3',
+\  'lbackground0': '#f5f2e9',
 \  'black': '#000000',
 \  'blue': '#1e6fcc',
 \  'green': '#216609',
@@ -62,11 +63,13 @@ let s:colors = {
 \  'red': '#cc3e28',
 \  'grey': '#777777',
 \  'dgrey': '#555555',
+\  'lgrey0': '#dbdbd7',
 \  'lgrey1': '#d8d5c7',
 \  'lgrey2': '#bfbcaf',
 \  'lgrey3': '#aaaaaa',
 \  'yellow': '#b58900',
 \  'lyellow': '#f2de91',
+\  'lyellow0': '#f0e9cc',
 \  'orange': '#a55000',
 \  'purple': '#5c21a5',
 \  'white': '#ffffff',
@@ -131,7 +134,7 @@ Hi Comment grey NONE NONE
 Hi Conceal NONE NONE NONE
 Hi Constant black NONE NONE
 Hi Cursor NONE lgrey1 NONE
-Hi CursorLine NONE lbackground NONE
+Hi CursorLine NONE lyellow0 NONE
 Hi CursorLineNR black NONE bold
 Hi Directory purple NONE NONE
 Hi ErrorMsg red NONE bold
@@ -145,7 +148,7 @@ Hi MatchParen NONE NONE bold
 Hi MoreMsg black NONE NONE
 Hi NonText background NONE NONE
 Hi Normal black background NONE
-Hi NormalFloat black background NONE
+Hi NormalFloat black lyellow0 NONE
 Hi Bold black NONE bold
 Hi Number blue NONE NONE
 Hi Operator black NONE NONE
@@ -372,11 +375,19 @@ hi! link yardType Todo
 hi! link yardTypeList Todo
 
 " Noice
-Hi NoiceCmdlinePopup black lbackground NONE
+Hi NoiceCmdlinePopup black lyellow0 NONE
 Hi NoiceCmdlinePopupTitle black NONE NONE
 Hi NoiceCmdlinePopupBorder black NONE NONE
 Hi NoiceCmdlineIcon black NONE NONE
 Hi NoiceCursor white black NONE
+
+" Telescope
+Hi TelescopeNormal black lyellow0 NONE
+Hi TelescopePromptCounter dgrey lyellow0 NONE
+
+" NeoTree
+Hi NeoTreeNormal black lbackground0 NONE
+Hi NeoTreeNormalNC black lbackground0 NONE
 
 delcommand Hi
 
