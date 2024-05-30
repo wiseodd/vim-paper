@@ -159,7 +159,7 @@ Hi Question black NONE NONE
 Hi Regexp orange NONE NONE
 Hi Search NONE lyellow NONE
 Hi IncSearch NONE lyellow NONE
-Hi Special black NONE NONE
+Hi Special black NONE bold
 Hi SpellBad red NONE bold,undercurl
 Hi SpellCap purple NONE undercurl
 Hi SpellLocal green NONE undercurl
@@ -402,7 +402,7 @@ hi! link TSCharacterSpecial SpecialChar
 hi! link TSComment Comment
 hi! link TSConditional Conditional
 hi! link TSConstant Constant
-hi! link TSConstBuiltin Special
+hi! link TSConstBuiltin Number
 hi! link TSConstMacro Define
 hi! link TSConstructor Special
 hi! link TSDebug Debug
