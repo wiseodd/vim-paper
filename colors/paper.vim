@@ -393,6 +393,81 @@ Hi TelescopePromptCounter dgrey lyellow0 NONE
 Hi NeoTreeNormal black lbackground0 NONE
 Hi NeoTreeNormalNC black lbackground0 NONE
 
+" TreeSitter
+hi! link TSAnnotation PreProc
+hi! link TSAttribute PreProc
+hi! link TSBoolean Boolean
+hi! link TSCharacter Character
+hi! link TSCharacterSpecial SpecialChar
+hi! link TSComment Comment
+hi! link TSConditional Conditional
+hi! link TSConstant Constant
+hi! link TSConstBuiltin Special
+hi! link TSConstMacro Define
+hi! link TSConstructor Special
+hi! link TSDebug Debug
+hi! link TSDefine Define
+hi! link TSError Error
+hi! link TSException Exception
+hi! link TSField Identifier
+hi! link TSFloat Float
+hi! link TSFunction Function
+hi! link TSFunctionCall Function
+hi! link TSFuncBuiltin Special
+hi! link TSFuncMacro Macro
+hi! link TSInclude Include
+hi! link TSKeyword Keyword
+hi! link TSKeywordFunction Keyword
+" hi! link TSKeywordOperator
+" hi! link TSKeywordReturn
+hi! link TSLabel Label
+hi! link TSMethod Function
+hi! link TSMethodCall Function
+hi! link TSNamespace Include
+" hi! link TSNone
+hi! link TSNumber Number
+hi! link TSOperator Operator
+hi! link TSParameter Identifier
+" hi! link TSParameterReference
+hi! link TSPreProc PreProc
+hi! link TSProperty Identifier
+hi! link TSPunctDelimiter Delimiter
+hi! link TSPunctBracket Delimiter
+hi! link TSPunctSpecial Delimiter
+hi! link TSRepeat Repeat
+hi! link TSStorageClass StorageClass
+hi! link TSString String
+hi! link TSStringRegex String
+hi! link TSStringEscape SpecialChar
+hi! link TSStringSpecial SpecialChar
+hi! link TSSymbol Identifier
+hi! link TSTag Label
+hi! link TSTagAttribute Identifier
+hi! link TSTagDelimiter Delimiter
+" hi! link TSText
+hi! link TSStrong WarningMsg
+" hi! link TSEmphasis
+" hi! link TSUnderline
+" hi! link TSStrike
+" hi! link TSTitle
+hi! link TSLiteral String
+" hi! link TSURI
+hi! link TSMath Special
+hi! link TSTextReference Constant
+hi! link TSEnvironment Macro
+hi! link TSEnvironmentName Type
+hi! link TSNote SpecialComment
+hi! link TSWarning Todo
+hi! link TSDanger WarningMsg
+hi! link TSTodo Todo
+hi! link TSType Type
+hi! link TSTypeBuiltin Type
+hi! link TSTypeQualifier TSKeyword
+hi! link TSTypeDefinition Typedef
+" hi! link TSVariable
+hi! link TSVariableBuiltin Special
+
+
 delcommand Hi
 
 " vim: et ts=2 sw=2
