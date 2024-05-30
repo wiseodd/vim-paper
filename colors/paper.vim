@@ -159,7 +159,7 @@ Hi Question black NONE NONE
 Hi Regexp orange NONE NONE
 Hi Search NONE lyellow NONE
 Hi IncSearch NONE lyellow NONE
-Hi Special black NONE bold
+Hi Special black NONE NONE
 Hi SpellBad red NONE bold,undercurl
 Hi SpellCap purple NONE undercurl
 Hi SpellLocal green NONE undercurl
